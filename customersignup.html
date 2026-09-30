@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Customer Registration Form</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: rgba(109, 97, 97, 0.945);
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            background: rgb(236, 146, 9);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 15px;
+            background-color: #0077cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #005fa3;
+        }
+
+        @media (max-width: 768px) {
+            .form-container {
+                padding: 15px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Exclusive Basketballs</h1>
+        <h2>Where Innovation Meets the Court</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="premium.html">Premium Collection</a>
+            <a href="customersignup.html">Customer Registration</a>
+        </nav>
+    </header>
+
+    <div class="form-container">
+
+        <h2>Customer Registration Form</h2>
+
+        <form>
+
+            <label for="fullname">Full Name</label>
+            <input type="text"
+                   id="fullname"
+                   name="fullname"
+                   placeholder="Enter your full name">
+
+            <label for="email">Email Address</label>
+            <input type="email"
+                   id="email"
+                   name="email"
+                   placeholder="Enter your email">
+
+            <label for="phone">Phone Number</label>
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   placeholder="123-456-7890">
+
+            <label for="customerType">Customer Type</label>
+            <input list="types"
+                   id="customerType"
+                   name="customerType"
+                   placeholder="Select or type">
+
+            <datalist id="types">
+                <option value="New Customer">
+                <option value="Returning Customer">
+                <option value="VIP">
+            </datalist>
+
+            <label for="password">Create Password</label>
+            <input type="password"
+                   id="password"
+                   name="password"
+                   placeholder="Enter a safe password">
+
+            <button type="submit">Submit Form</button>
+
+            <button type="button"
+                    onclick="alert('Button Works!')">
+                Test Button
+            </button>
+
+        </form>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Exclusive Basketballs</p>
+        <p>Exclusive Basketballs</p>
+        <p>123 Zoe Drive, Woodstown, NJ 08098</p>
+        <p>Hours: Mon-Sat 10 AM - 8 PM</p>
+        <p>Phone: (777) 777-7777</p>
+        <p>Email: contact@exclusivebasketballs.com</p>
+    </footer>
+
+</body>
+
+</html>
